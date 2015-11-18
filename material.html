@@ -1,0 +1,81 @@
+<section class="well3 bg-secondary">
+    <div class="container">
+        <h2 class="right">חומרי לימוד</h2>
+
+        <div class="row" id="material_wrapper">
+
+        </div>
+    </div>
+</section>
+<script>
+    function allMaterial() {
+        var Material = Parse.Object.extend("Material");
+        var query = new Parse.Query(Material);
+        query.find({
+            success: function (results) {
+                var all = results;
+                /*while (true) {
+                 var ex = all[0].get("grade");
+                 var tempArr = [];
+                 for (var i = 1; i < all.length; i++) {
+                 if (all[i].get("grade") == ex) {
+                 tempArr.push(all[i]);
+                 console.log(tempArr);
+                 removeFromArray(all, i)
+                 }
+                 }
+
+                 tempArr.push(all[0]);
+                 console.log(all);
+                 removeFromArray(all, 0);
+                 createCard(tempArr[0].get("grade"), tempArr);
+                 alert(tempArr[0].get("grade"));
+                 if (all.length = 0) {
+                 break;
+                 }
+                 }*/
+                for (var i = 0; i < results.length; i++) {
+                    createCard(results[i].get("grade"), results[i])
+                }
+            },
+            error: function (error) {
+                alert("Error: " + error.message);
+            }
+        });
+    }
+    allMaterial();
+
+
+    function removeFromArray(arr, index) {
+        arr.splice(arr.indexOf(index, 1));
+    }
+
+    function createCard(TITLE, ARR) {
+        var grid = document.createElement('div');
+        grid.className = "grid_3";
+        var pricing_table = document.createElement('div');
+        pricing_table.className = "pricing-table";
+        var pricing_table_header = document.createElement('div');
+        pricing_table_header.className = "pricing-table_header";
+        var title = document.createElement('h3');
+        title.innerHTML = TITLE;
+        pricing_table_header.appendChild(title);
+        pricing_table.appendChild(pricing_table_header);
+        var pricing_table_cnt = document.createElement('div');
+        pricing_table_cnt.className = "pricing-table_cnt";
+        var ul = document.createElement('ul');
+        for (var i = 0; i < ARR.get("names").length; i++) {
+            var li = document.createElement('LI');
+            li.className = "active";
+            var a = document.createElement('a');
+            a.href = ARR.get("links")[i];
+            a.innerHTML = ARR.get("names")[i];
+            li.appendChild(a);
+            ul.appendChild(li);
+        }
+        pricing_table_cnt.appendChild(ul);
+        pricing_table.appendChild(pricing_table_cnt);
+        grid.appendChild(pricing_table);
+        document.getElementById("material_wrapper").appendChild(grid)
+    }
+</script>

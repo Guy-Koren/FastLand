@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/component2.css"/>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colorScheme-1.css">
+    <link rel="stylesheet" href="css/owl-carousel.css"/>
+    <link rel="stylesheet" href="css/subscribe-form.css"/>
+    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+    <!--[if lt IE 9]>
+    <html class="lt-ie9">
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src='js/device.min.js'></script>
+    <script>
+        function replaceContent(id, htmlFile) {
+            $(function () {
+                $("#" + id).load(htmlFile);
+            });
+        }
+    </script>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+
+</head>
+<body onload="dismissLoadingScreen()">
+
+<div class="page">
+   <!-- <div class="preloader center">
+        <div class="brand">
+            <img src="images/preloader.gif" alt=""/>
+        </div>
+    </div>
+
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <div id="banners"></div>
+    <script>replaceContent("banners", "banners.html")</script>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main>
+        <section class="well2 well2__ins2 bg-primary">
+            <div class="container">
+                <div class="item">
+                    <blockquote>
+                        <div class="box">
+                            <div class="box_aside">
+                                <img src="images/guy.png" style="width: 30%; float: left;"/>
+
+                                <h3 class="right-align">גיא קורן</h3>
+                                <h4 style="text-align: right">מנהל</h4>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <q dir="rtl" style="padding-top: 20px">מתמטיקה והחיים זה כמו שני ישרים מתלכדים. בכל תחום עניין
+                            הם נושקים אחד לשני</q>
+
+
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <div id="services" style="height: 65%"></div>
+        <script>replaceContent("services", "services.html")</script>
+
+        <div id="fastthings"></div>
+        <script>replaceContent("fastthings", "fastthings.html")</script>
+
+        <div id="sports"></div>
+        <script>replaceContent("sports", "sports.html")</script>
+
+        <section class="well3 well3__ins1 bg-secondary2" id="books">
+            <div class="container center">
+                <h2>ספרים</h2>
+            </div>
+            <div class="owl-carousel2">
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="grid_3">
+                                <a class="thumb">
+                                    <img src="img/1.png" alt=""/>
+                                    <span class="thumb_overlay"></span>
+                                </a>
+                            </div>
+                            <div class="grid_3">
+                                <a class="thumb">
+                                    <img src="img/2.png" alt=""/>
+                                    <span class="thumb_overlay"></span>
+                                </a>
+                            </div>
+                            <div class="grid_3">
+                                <a class="thumb">
+                                    <img src="img/3.png" alt=""/>
+                                    <span class="thumb_overlay"></span>
+                                </a>
+                            </div>
+                            <div class="grid_3">
+                                <a class="thumb">
+                                    <img src="img/4.png" alt=""/>
+                                    <span class="thumb_overlay"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="grid_3">
+                                <a class="thumb">
+                                    <img src="img/5.png" alt=""/>
+                                    <span class="thumb_overlay"></span>
+                                </a>
+                            </div>
+                            <div class="grid_3">
+                                <a class="thumb">
+                                    <img src="img/8th.PNG" alt=""/>
+                                    <span class="thumb_overlay"></span>
+                                </a>
+                            </div>
+                            <div class="grid_3">
+                                <a class="thumb">
+                                    <img src="img/9th.PNG" alt=""/>
+                                    <span class="thumb_overlay"></span>
+                                </a>
+                            </div>
+                            <div class="grid_3">
+                                <a class="thumb">
+                                    <img src="img/10th.PNG" alt=""/>
+                                    <span class="thumb_overlay"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="material"></div>
+        <script>replaceContent("material", "material.html")</script>
+
+        <div id="about" class="bg-secondary2"></div>
+        <script>replaceContent("about", "about.html")</script>
+
+        <div id="system" class="bg-secondary"></div>
+        <script>replaceContent("system", "system.html")</script>
+
+        <section class="well2 well2__ins1" id="video">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_6">
+                        <div class="video mg-add">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/HtqlIVN9bh8"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="grid_6">
+                        <div class="ins1">
+                            <h2 class="rtl">אז למה מתמטיקה?</h2>
+
+                            <p>מתמטיקה היא למעשה כלי עזר , העוזר לנו בחישוב כמויות תיאור מבנים ועוד....
+
+                                המתמטיקה נוגעת למעשה בכל תחום עניין ודעת: מכלי מוזיקה, בישול, הנדסה, מחשבים, אדריכלות,
+                                רפואה, עיצוב, רפואה, ספורט, אופנה ועוד.
+
+                                למעשה בכל תחום שנרצה להתמקצע נצטרך את המתמטיקה.
+
+                                המתמטיקה באה לפשט חישובים מסובכים ולתת לנו מענה לבעיות מורכבות.
+
+
+                                בסירטון הבא ניתן לראות כמה מקומות שלא ההינו חושבים שמתמטיקה יכולה להשתלב
+                            </p>
+
+                            <h3>" אל תהיי מודאגת מן הקשיים שלך במתמטיקה <br> אני מבטיחך כי שלי גדולים יותר" <br> – אלברט
+                                איינשטיין</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="parallax bg-secondary" style="padding-top: 50px;padding-bottom: 50px" data-speed="1" id="contact"
+                 data-mobile="true">
+            <div class="container">
+                <h2 class="right">צור קשר</h2>
+                <form id="subscribe-form" class="subscribe-form" style="float: left">
+                    <label>
+                        <input id="name" type="text" placeholder="שם">
+                    </label>
+                    <br><br>
+                    <label>
+                        <input id="email" type="email" placeholder="אימייל">
+                    </label>
+                    <br><br>
+                    <label>
+                        <input id="phone" type="tel" placeholder="מספר טלפון זמין">
+                    </label>
+                    <br>
+                    <br>
+                    <a class="btn btn__lg" id="submit" onclick="addEmailToDB(document.getElementById('email').value,document.getElementById('name').value,document.getElementById('phone').value)">שלח</a>
+                </form>
+                <h3 dir="rtl" style="text-align: right;">
+                    מרכזי הלמידה
+                    <br>
+                    · מרכז בנחלה, העצמאות 45, ראשון לציון
+                    <br>
+                    · מרכז התדר – הרצל 136 פינת תש"ח, סמוך לסקייט-פארק, ראשון לציון
+                    <br>
+                    · מרכז הבאלנס – האחד עשר 34, ראשון לציון
+                    <br>
+                    · מרכז בנוערנט, שד' יעקוב 4 ראשון לציון
+                    <br>
+                    מרכז כרמים, רחוב הייקב 13 ראשון לציון
+                    <br>
+                    · בקרוב סניפים גם במערב ראשון ותל אביב
+                    <br>
+                    מס' טלפון לפרטים והצטרפות לקבוצה : 054-220-4765
+                    <br>
+                    שיעורים פרטיים המתקיימים בבית התלמיד:
+                    <br>
+                    בכל אזור המרכז: ת"א, ראשון לציון, חולון, גבעתיים ורמת השרון
+                    <br>
+                    מס' טלפון לפרטים ותיאום שיעור: 054-220-4765
+                    <br>
+                    מייל: guykoren100@gmail.com
+                    <br>
+
+                    חפשו אותנו גם בפייסבוק – גיא קורן – מרכז להוראה פרטית
+                    <br>
+                </h3>
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+</div>
+<footer id="footer">
+    <iframe src="https://www.google.com/maps/d/embed?mid=zw8WmSnoSrYE.k0FAZg8Q-A98" id="map"
+            style="width: 100%;height: 480px; position: relative;padding-bottom: 20px"></iframe>
+    <ul class="pagination paged">
+        <li class="waves-effect"><a href="#banners">ראשית הדף</a></li>
+        <li class="waves-effect"><a href="#services">שירותים</a></li>
+        <li class="waves-effect"><a href="#fastthings">FastThings</a></li>
+        <li class="waves-effect"><a href="#sports">להצליח בכל המגרשים</a></li>
+        <li class="waves-effect"><a href="#books">ספרים</a></li>
+        <li class="waves-effect"><a href="#material">חומרי לימוד</a></li>
+        <li class="waves-effect"><a href="#about">אודות</a></li>
+        <li class="waves-effect"><a href="#system">השיטה</a></li>
+        <li class="waves-effect"><a href="#video">סרטון</a></li>
+        <li class="waves-effect"><a href="#contact">צור קשר</a></li>
+        <li class="waves-effect"><a href="#map">מפה</a></li>
+    </ul>
+</footer>
+
+<script>$('.paged').each(function () {
+    var ul = $(this);
+    ul.children().each(function (i, li) {
+        ul.prepend(li)
+    });
+});</script>
+<script src="js/script.js"></script>
+<!-- coded by Diversant -->
+</body>
+</html>
